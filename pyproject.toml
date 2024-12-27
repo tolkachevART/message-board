@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "board"
+version = "0.1.0"
+description = ""
+authors = ["me"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.1.4"
+python-dotenv = "^1.0.1"
+psycopg2-binary = "^2.9.10"
+django-filter = "^24.3"
+djangorestframework-simplejwt = "^5.3.1"
+django-cors-headers = "^4.6.0"
+drf-yasg = "^1.21.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
