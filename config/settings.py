@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     # Local apps
 
     "users",
+    "addboards",
 ]
 
 MIDDLEWARE = [
@@ -166,5 +167,3 @@ EMAIL_USE_SSL = os.getenv('EMAIL_USE_SSL', default=False) == "True"
 
 SERVER_EMAIL = EMAIL_HOST_USER
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
-
-
