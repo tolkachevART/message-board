@@ -11,6 +11,9 @@ class UserCreateAPIView(CreateAPIView):
     permission_classes = (AllowAny,)
 
     def perform_create(self, serializer):
+        """
+        Сохраняет данные пользователя и устанавливает пароль.
+        """
         user = serializer.save(is_active=True)
         user.set_password(user.password)
         user.save()
